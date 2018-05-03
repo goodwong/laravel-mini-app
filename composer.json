@@ -1,0 +1,27 @@
+{
+    "name": "goodwong/laravel-miniapp",
+    "description": "Laravel 微信小程序模块",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "william",
+            "email": "goodwong@foxmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "overtrue/laravel-wechat": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Goodwong\\Miniapp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+            ]
+        }
+    }
+}
