@@ -21,6 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
+                "Goodwong\\Miniapp\\MiniappServiceProvider"
             ]
         }
     }

@@ -5,7 +5,7 @@ namespace Goodwong\Miniapp\Events;
 use Goodwong\Miniapp\Entities\MiniappUser;
 use Illuminate\Queue\SerializesModels;
 
-class MiniappUserAuthorized
+class MiniappUserCreated
 {
     use SerializesModels;
 

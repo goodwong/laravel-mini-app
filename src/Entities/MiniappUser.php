@@ -30,7 +30,7 @@ class MiniappUser extends Model
      * @var array
      */
     protected $hidden = [
-        'openid',
-        'unionid',
+        'openId',
+        'unionId',
     ];
 }

@@ -25,7 +25,7 @@ class MiniappUserController extends Controller
      */
     public function show(MiniappUser $miniappUser)
     {
-        //
+        return $miniappUser;
     }
 
     /**
@@ -35,18 +35,6 @@ class MiniappUserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\MiniappUser  $miniappUser
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, MiniappUser $miniappUser)
     {
         //
     }
