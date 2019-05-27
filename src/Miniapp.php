@@ -15,6 +15,10 @@ class Miniapp
     public static function findByCode(string $code)
     {
         $response = app('wechat.mini_program')->auth->session($code);
-        return MiniappUser::firstOrCreate([ 'openId' => $response['openid'] ]);
+        $miniuser = MiniappUser::firstOrCreate([ 'openId' => $response['openid'] ], ['unionId' => $response['openid']]);
+        if ($miniuser->unionId != $response['openid']) {
+            $miniuser->update(['unionId' => $response['openid']]);
+        }
+        return $miniuser;
     }
 }
